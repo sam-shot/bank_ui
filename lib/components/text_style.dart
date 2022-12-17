@@ -10,4 +10,13 @@ class Style {
     fontWeight: FontWeight.bold,
     color: AppColor.mainColor[200]
   );
+  static TextStyle h2 = GoogleFonts.poppins(
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+    color: AppColor.mainColor[200]
+  );
+  static TextStyle h3 = GoogleFonts.roboto(
+    fontSize: 14,
+    fontWeight: FontWeight.w600
+  );
 }

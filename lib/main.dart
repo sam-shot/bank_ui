@@ -1,14 +1,18 @@
 import 'package:bank_ui/views/onboarding_screen.dart';
+import 'package:bank_ui/views/otp_verification.dart';
+import 'package:bank_ui/views/register_screen.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(
-  DevicePreview(
-    enabled: !kReleaseMode,
-    builder: (context) => MyApp(), // Wrap your app
-  ),
-);
+void main() => runApp(MyApp());
+
+// void main() => runApp(
+//   DevicePreview(
+//     enabled: !kReleaseMode,
+//     builder: (context) => MyApp(), // Wrap your app
+//   ),
+// );
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -22,8 +26,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: OnboardingScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => OnboardingScreen(),
+        '/register': (context) => RegisterScreen(),
+        '/otpscreen': (context) => OtpVerificationScreen(),
+      },
     );
   }
 }
-

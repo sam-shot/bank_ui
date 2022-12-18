@@ -27,7 +27,7 @@ class OnboardingScreen extends StatelessWidget {
               const Spacing.height(20),
               Text(
                 "Let's try SEWA now! \nAnd get the best solution",
-                style: Style.h3,
+                style: Style.body2,
                 textAlign: TextAlign.center,
               ),
               Image.asset("assets/images/finances.png"),
@@ -56,7 +56,9 @@ class OnboardingScreen extends StatelessWidget {
                 height: 50,
                 width: width,
                 text: "Get Started",
-                ontap: () {},
+                ontap: () {
+                  Navigator.pushNamed(context, '/register');
+                },
               )
             ],
           ),

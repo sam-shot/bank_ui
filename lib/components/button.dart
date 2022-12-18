@@ -32,7 +32,7 @@ class Button extends StatelessWidget {
           child: Center(
             child: Text(
               text,
-              style: style ??= Style.h2.copyWith(color: Colors.white),
+              style: style ??= Style.body1.copyWith(color: Colors.white),
             ),
           ),
         ),

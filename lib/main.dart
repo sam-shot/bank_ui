@@ -1,3 +1,5 @@
+import 'package:bank_ui/views/home_screen.dart';
+import 'package:bank_ui/views/navigation_screen.dart';
 import 'package:bank_ui/views/onboarding_screen.dart';
 import 'package:bank_ui/views/otp_verification.dart';
 import 'package:bank_ui/views/register_screen.dart';
@@ -5,14 +7,14 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+// void main() => runApp(MyApp());
 
-// void main() => runApp(
-//   DevicePreview(
-//     enabled: !kReleaseMode,
-//     builder: (context) => MyApp(), // Wrap your app
-//   ),
-// );
+void main() => runApp(
+  DevicePreview(
+    enabled: !kReleaseMode,
+    builder: (context) => const MyApp(), // Wrap your app
+  ),
+);
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -28,9 +30,11 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => OnboardingScreen(),
-        '/register': (context) => RegisterScreen(),
-        '/otpscreen': (context) => OtpVerificationScreen(),
+        '/': (context) => const OnboardingScreen(),
+        '/register': (context) => const RegisterScreen(),
+        '/otpscreen': (context) => const OtpVerificationScreen(),
+        '/homescreen': (context) => const HomeScreen(),
+        '/navigationscreen': (context) => const NavigationScreen(),
       },
     );
   }

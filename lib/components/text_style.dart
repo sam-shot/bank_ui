@@ -25,4 +25,9 @@ class Style {
     fontWeight: FontWeight.w600,
     color: AppColor.mainColor[200]
   );
+  static TextStyle body3 = GoogleFonts.poppins(
+    fontSize: 13,
+    fontWeight: FontWeight.w600,
+    color: AppColor.mainColor[200]
+  );
 }

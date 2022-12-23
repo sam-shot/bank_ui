@@ -1,16 +1,13 @@
-# bank_ui
+## Bank UI
 
-A new Flutter project.
+This is a bank UI clone application with a pixel perfect design.
 
-## Getting Started
+Its still in development
+But you can still test it with the Appetize link below..
 
-This project is a starting point for a Flutter application.
+### Figma design file
+https://www.figma.com/file/0sy1dBeqirYaTcHlqBbnEL/SEWA-(Community)?node-id=0%3A1&t=yTyKNr933DvflC8u-0
 
-A few resources to get you started if this is your first Flutter project:
+### Appetize link
+https://appetize.io/app/e4lsg3pxssd5bys6ygyd2yykwm
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
